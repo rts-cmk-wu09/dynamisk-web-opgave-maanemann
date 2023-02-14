@@ -16,7 +16,28 @@ img {
 
 /* --- HERO --- */
 
+.hero {
+    display: grid;
+}
+
+.hero-bg {
+    grid-area: 1 / 1 / -1 / -1;
+    width: 100%;
+}
+
 nav {
-    background-color: aquamarine;
-    min-height: 1rem;
+    grid-area: 1 / 1 / -1 / -1;
+    display: flex;
+    padding: 1.9rem 2.5rem;
+    justify-content: space-between;
+}
+
+.placeh {
+    width: 1rem;
+    height: 1rem;
+    background-color: burlywood;
+}
+
+.intro {
+    grid-area: 1 / 1 / -1 / -1;
 }
