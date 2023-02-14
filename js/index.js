@@ -4,10 +4,28 @@ document.addEventListener("DOMContentLoaded", function() {
     services.forEach(service => console.log(service.headline))
 
     const heroDOM = document.querySelector(".hero");
+    const servicesDOM = document.querySelector(".services");
+    const facilitiesDOM = document.querySelector(".facilities");
+    const sitesDOM = document.querySelector(".sites");
+    const advantagesDOM = document.querySelector(".advantages");
 
     heroDOM.innerHTML = `
-        <img src="${hero.image}" alt="...">
-        <nav></nav>
+        <img class="hero-bg" src="${hero.image}" alt="...">
+        <nav>
+            <div class="placeh"></div>
+            <div class="placeh"></div>
+        </nav>
+        <div class="intro">
+            <h1>
+                ${hero.headline}
+            </h1>
+            <p class="intro__text">
+                ${hero.copy}
+            </p>
+            <a class="hero__knap" href="#">
+                <img class="hero__globus" src="${hero.icon}">Explore
+            </a>
+        </div>
     `;
 
 }) // DOMContentLoaded slut
