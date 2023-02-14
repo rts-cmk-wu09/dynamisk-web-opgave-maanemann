@@ -1,10 +1,15 @@
 /*
    --- GLOBAL --- */
 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@400;500;700&display=swap');
+/* font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif; */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 img {
     display: block;
@@ -45,5 +50,38 @@ nav {
     height: 537px;
     background-color: #fff;
     margin: 384px 63px;
+    padding: 96px 165px 75px 62px;
     box-shadow: 0 0 5rem rgba(0, 0, 0, 0.128);
+}
+
+h1 {
+    font-size: 39px;
+    font-weight: 700;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 29px;
+}
+
+.intro__text {
+    margin-bottom: 29px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.intro__knap {
+    width: 250px;
+    height: 56px;
+    background-color: #F78065;
+    color: white;
+    padding: 21px 77px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 900;
+    display: grid;
+    grid-auto-flow: column;
+    align-content: center;
+}
+
+.intro__globus {
+    height: 1.5em;
+    display: inline;
 }

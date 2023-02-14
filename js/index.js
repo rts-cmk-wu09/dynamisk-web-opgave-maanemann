@@ -22,8 +22,9 @@ document.addEventListener("DOMContentLoaded", function() {
             <p class="intro__text">
                 ${hero.copy}
             </p>
-            <a class="hero__knap" href="#">
-                <img class="hero__globus" src="${hero.icon}">Explore
+            <a class="intro__knap" href="#">
+                <img class="intro__globus" src="${hero.icon}">
+                Explore
             </a>
         </div>
     `;
