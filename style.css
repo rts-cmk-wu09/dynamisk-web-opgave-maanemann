@@ -28,6 +28,7 @@ img {
 nav {
     grid-area: 1 / 1 / -1 / -1;
     display: flex;
+    height: fit-content;
     padding: 1.9rem 2.5rem;
     justify-content: space-between;
 }
@@ -40,4 +41,9 @@ nav {
 
 .intro {
     grid-area: 1 / 1 / -1 / -1;
+    width: 741px;
+    height: 537px;
+    background-color: #fff;
+    margin: 384px 63px;
+    box-shadow: 0 0 5rem rgba(0, 0, 0, 0.128);
 }
