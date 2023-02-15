@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let servArt = document.createElement("article");
 
         let image = document.createElement("img");
+        // image.classList = "services__illustration";
         image.src = service.illustration;
         image.alt = "One of our services";
         

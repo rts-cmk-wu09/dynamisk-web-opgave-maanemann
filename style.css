@@ -109,3 +109,9 @@ nav {
     gap: 1rem;
     margin: 0 7%;
 }
+.services h3 {
+    margin-top: 84px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Merriweather', serif;
+}
