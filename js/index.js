@@ -29,11 +29,19 @@ document.addEventListener("DOMContentLoaded", function() {
         </div>
     `;
 
-    services.forEach((service) =>{
+    services.forEach((service) => {
+        let servArt = document.createElement("article");
+
         let image = document.createElement("img");
         image.src = service.illustration;
         image.alt = "One of our services";
-        servicesDOM.append(image);
+        
+        let headline = document.createElement("h3");
+        headline.textContent = service.headline;
+
+        servArt.append(image);
+        servArt.append(headline);
+        servicesDOM.append(servArt);
     })
 
 }) // DOMContentLoaded slut
