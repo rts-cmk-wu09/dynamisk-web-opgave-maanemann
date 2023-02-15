@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     services.forEach(service => console.log(service.headline))
 
     const heroDOM = document.querySelector(".hero");
-    const servicesDOM = document.querySelector(".services");
+    let servicesDOM = document.querySelector(".services");
     const facilitiesDOM = document.querySelector(".facilities");
     const sitesDOM = document.querySelector(".sites");
     const advantagesDOM = document.querySelector(".advantages");
@@ -28,6 +28,13 @@ document.addEventListener("DOMContentLoaded", function() {
             </a>
         </div>
     `;
+
+    services.forEach((service) =>{
+        let image = document.createElement("img");
+        image.src = service.illustration;
+        image.alt = "One of our services";
+        servicesDOM.append(image);
+    })
 
 }) // DOMContentLoaded slut
 
