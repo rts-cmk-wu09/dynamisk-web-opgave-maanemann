@@ -31,18 +31,28 @@ document.addEventListener("DOMContentLoaded", function() {
 
     services.forEach((service) => {
         let servArt = document.createElement("article");
+        // servArt.classList = "services__article"
+        servicesDOM.append(servArt);
 
         let image = document.createElement("img");
         // image.classList = "services__illustration";
         image.src = service.illustration;
         image.alt = "One of our services";
+        servArt.append(image);
         
         let headline = document.createElement("h3");
         headline.textContent = service.headline;
-
-        servArt.append(image);
         servArt.append(headline);
-        servicesDOM.append(servArt);
+
+        let text = document.createElement("p");
+        text.classList ="services__text";
+        text.textContent = service.text;
+        servArt.append(text);
+
+        let linktext = document.createElement("p");
+        linktext.classList ="services__linktext";
+        linktext.textContent = service.linktext;
+        servArt.append(linktext);
     })
 
 }) // DOMContentLoaded slut
