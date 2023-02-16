@@ -40,9 +40,9 @@ document.addEventListener("DOMContentLoaded", function() {
         image.alt = "One of our services";
         servArt.append(image);
         
-        let headline = document.createElement("h3");
-        headline.textContent = service.headline;
-        servArt.append(headline);
+        let servHead = document.createElement("h3");
+        servHead.textContent = service.headline;
+        servArt.append(servHead);
 
         let text = document.createElement("p");
         text.classList ="services__text";
@@ -53,6 +53,19 @@ document.addEventListener("DOMContentLoaded", function() {
         linktext.classList ="services__linktext";
         linktext.textContent = service.linktext;
         servArt.append(linktext);
+    })
+
+    let faciHead = document.createElement("h2");
+    faciHead.textContent = facilities.headline;
+    facilitiesDOM.append(faciHead);
+
+    facilities.options.forEach((facility) => {
+        let faciArt = document.createElement("article");
+        facilitiesDOM.append(faciArt);
+
+        let faciIcon = document.createElement("img");
+        faciIcon.src = facility.icon;
+        faciArt.append(faciIcon);
     })
 
 }) // DOMContentLoaded slut
