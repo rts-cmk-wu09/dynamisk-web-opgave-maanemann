@@ -66,6 +66,19 @@ document.addEventListener("DOMContentLoaded", function() {
         let faciIcon = document.createElement("img");
         faciIcon.src = facility.icon;
         faciArt.append(faciIcon);
+
+        let faciHead2 = document.createElement("h3");
+        faciHead2.textContent = facility.headline;
+        faciArt.append(faciHead2);
+
+        let faciText = document.createElement("p");
+        faciText.textContent = facility.text;
+        faciArt.append(faciText);
+
+        let faciLink = document.createElement("a");
+        faciLink.href = "#";
+        faciLink.innerHTML = "Show me more";
+        faciArt.append(faciLink);
     })
 
 }) // DOMContentLoaded slut
