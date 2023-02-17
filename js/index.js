@@ -81,5 +81,37 @@ document.addEventListener("DOMContentLoaded", function() {
         faciArt.append(faciLink);
     })
 
+    let sitesIntro = document.createElement("article");
+    sitesDOM.append(sitesIntro);
+    
+    let sitesHead = document.createElement("h2");
+    sitesHead.textContent = sites.headline;
+    sitesIntro.append(sitesHead);
+
+    let sitesText = document.createElement("p");
+    sitesText.textContent = sites.text;
+    sitesIntro.append(sitesText);
+
+    // --- Forsøg 1 : ---
+    // sitesDOM.innerHTML = `
+    //     <a href="#">
+    //         <img src="${sites.btnicon}">
+    //         Start
+    //     </a>
+    // `;
+
+    // --- Forsøg 2 : ---
+    // sitesBtn.append("<img src="${sites.btnicon}">")
+
+    // --- Forsøg 3 : ---
+    let sitesBtn = document.createElement("a");
+    sitesBtn.href = "#";
+    // sitesBtn.innerHTML = sites.btnicon + "Start";
+    sitesIntro.append(sitesBtn);
+
+    let sitesBtnContent = document.createElement(img);
+    sitesBtnContent.src = sites.btnicon;
+    sitesBtn.append(sitesBtnContent + "Start");
+
 }) // DOMContentLoaded slut
 
